@@ -33,9 +33,9 @@ while count < 6:
 
     print("------------------------------")
     print("現在の成績")
-    print(f"あなた:{str(user_win)}勝") 
-    print(f"コンピューター:{str(computer_win)}勝")
-    print(f"あいこ:{str(draw)}回")  
+    print(f"あなた:{user_win}勝") 
+    print(f"コンピューター:{computer_win}勝")
+    print(f"あいこ:{draw}回")  
     print("------------------------------")         
 
     count += 1
