@@ -25,4 +25,6 @@ def judge(user_hand,computer_hand):
           (user_hand == 2 and computer_hand == 0)):
         return "あなたの勝ちです！"
     else:
-        return "あなたの負けです！"         
+        return "あなたの負けです！"   
+
+
