@@ -6,10 +6,10 @@ def get_user_hand():
             print("0:グー 1:チョキ 2:パー")
             user_hand = int(input("数字を入力して下さい！："))
         except ValueError:
-            print("数字を入力して下さい。")
+            print("＊警告＊ 数字を入力して下さい。")
             continue
-        if not 0 < user_hand < 3:
-            print("0~2の数字を入力して下さい")
+        if not 0 <= user_hand < 3:
+            print("*警告* 0~2の数字を入力して下さい")
             continue
         break
     return user_hand 
@@ -19,12 +19,12 @@ def get_computer_hand():
 
 def judge(user_hand,computer_hand):
     if user_hand == computer_hand:
-        return "あいこです！"
-    elif ((user_hand == 0 and computer_hand == 1 ),
-          (user_hand == 1 and computer_hand == 2),
+        return "draw"
+    elif ((user_hand == 0 and computer_hand == 1 ) or
+          (user_hand == 1 and computer_hand == 2) or
           (user_hand == 2 and computer_hand == 0)):
-        return "あなたの勝ちです！"
+        return "win"
     else:
-        return "あなたの負けです！"   
+        return "lose"   
 
 
